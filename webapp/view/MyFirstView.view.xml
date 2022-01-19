@@ -1,0 +1,57 @@
+<mvc:View
+    controllerName="ui.MyFirstProject.trainingproject.controller.MyFirstView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core">
+    <VBox id="vb1" class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormChange354"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			title="Address"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+	        <f:content>
+				<Label id="_IDGenLabel1" text="Name" />
+				<Input id="name" value="{SupplierName}" />
+				<Label id="_IDGenLabel2" text="Street/No." />
+				<Input id="_IDGenInput1" value="{Street}">
+				</Input>
+				<Input id="_IDGenInput2" value="{HouseNumber}">
+					<layoutData>
+						<l:GridData id="_IDGenGridData1" span="XL1 L2 M2 S4" />
+					</layoutData>
+				</Input>
+				<Label id="_IDGenLabel3" text="ZIP Code/City" />
+				<Input id="_IDGenInput3" value="{ZIPCode}">
+					<layoutData>
+						<l:GridData id="_IDGenGridData2" span="XL1 L2 M2 S4" />
+					</layoutData>
+				</Input>
+				<Input id="_IDGenInput4" value="{City}" />
+				<Label id="_IDGenLabel4" text="Country" />
+				<Select id="country" selectedKey="{Country}">
+					<items>
+						<core:Item id="_IDGenItem1" text="England" key="England"/>
+						<core:Item id="_IDGenItem2" text="Germany" key="Germany"/>
+						<core:Item id="_IDGenItem3" text="USA" key="USA"/>
+                        <core:Item id="_IDGenItem4" text="India" key="India"/>
+					</items>
+				</Select>
+			</f:content>
+		</f:SimpleForm>
+	</VBox>   
+</mvc:View>
